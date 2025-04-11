@@ -12,7 +12,7 @@ const UserSchema = new Schema({
         enum: ["non-member", "member", "secret-member", "admin"],
         default: "non-member",
       },
-    isAdmin: { type: Boolean },
+    isAdmin: { type: Boolean, default: false },
     image: { type: String },
 })
 
